@@ -1,0 +1,145 @@
+/* ==========================================================================
+// Project:   FlowedLayoutTut
+// File:      tutorial.css
+// Copyright: @2013 ktornwall
+// ========================================================================*/
+
+$color-lightest: white;
+$color-light: #ECF0F5;
+$color-medium: #6F6F6F;
+$color-dark: #3A3A3A;
+
+$off-color-lightest: #D5ECFF;
+$off-color-light: #B2E1FF;
+$off-color-medium: #1A9CBC;
+$off-color-dark: #34495B;
+
+$box-color-red: #FF6B6B;
+$box-color-blue: #4ECDC4;
+$box-color-green: #C7F464;
+$box-color-yellow: #556270;
+
+$fontsize-title: 32px;
+
+.main-page {
+	background: $color-dark;
+	
+	 .main-title-label {
+     font-size: $fontsize-title;
+     font-weight: bold;
+     color: $off-color-light;
+     line-height: 100px;
+  }
+}
+
+.code-snippet-view {
+	background-color: $color-lightest;
+  -moz-box-shadow:    inset 0 0 10px $off-color-lightest;
+	-webkit-box-shadow: inset 0 0 10px $off-color-lightest;
+  box-shadow:         inset 0 0 10px $off-color-lightest;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+	
+	.code-text {
+	   padding: 10px;
+	   font-family: Menlo, Monaco, monospace;
+     font-size: 13px;
+     white-space: pre;
+	}
+}
+
+.tutorial-view {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	
+	background: $off-color-lightest;
+	color: $off-color-dark;
+	
+	.title-label {
+	   font-size: $fontsize-title;
+	   font-weight: bold;
+	   line-height: 32px;
+	   overflow: hidden;
+	   white-space: nowrap;
+	   text-overflow: ellipsis;
+	}
+	
+	.tutorial-content {
+		 border-top: solid 1px $off-color-light;
+	   border-bottom: solid 1px $off-color-light;
+	}
+	
+	.collection.sc-collection-view.page-list-view {
+	   background: $off-color-lightest;
+	   .sc-list-item-view {
+	       &.sel {
+	           background: $off-color-medium;
+	           font-weight: bold;
+	       }
+	   }
+	}
+}
+
+div.sc-view.flow-example-view {
+	border: 1px solid $color-dark;
+}
+
+.sample-box-view {
+	background: $color-medium;
+	
+	.sc-label-view {
+	 text-align: center;
+	 color: white;
+	 font-weight: bold;
+	}
+	
+	&.red {
+	 background: $box-color-red;
+	}
+	
+	&.blue {
+	 background: $box-color-blue;
+	 
+	 .sc-label-view {
+	   color: $box-color-yellow;
+	 } 
+	}
+	
+	&.green {
+	 background: $box-color-green;
+	 .sc-label-view {
+     color: $box-color-yellow;
+   } 
+	}
+	
+	&.yellow {
+	 background: $box-color-yellow;
+	}
+}
+
+.flowed-layout-property-view {
+	.property-name {
+	   font-size: 20px;
+	   font-weight: bold;
+	   line-height: 24px;
+	   color: $off-color-medium;
+	}
+	
+	.property-description {
+		 background-color: $color-lightest;
+	  -moz-box-shadow:    inset 0 0 10px $off-color-lightest;
+	  -webkit-box-shadow: inset 0 0 10px $off-color-lightest;
+	  box-shadow:         inset 0 0 10px $off-color-lightest;
+	  
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+	  
+	  .label-view {
+	     padding: 10px;
+	  }
+	}
+}
